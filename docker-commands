@@ -1,1 +1,14 @@
-
+sudo apt update 
+sudo apt-get install docker.io -y
+sudo su -     
+docker --version 
+systemctl status docker.io
+docker pull ubuntu
+docker images
+docker run -itd -p 80:80 - name test ubuntu
+docker container ls -a
+docker exec -it test bash
+apt update
+apt install apache2
+service apache2 status
+service apache2 start
